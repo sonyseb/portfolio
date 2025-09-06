@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0d1b2a;
+  color: #fff;
+}
+
+header {
+  background: #1b263b;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #ffd369;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffd369;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Signup Form */
+.signup-form, form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.signup-form input, select, textarea {
+  padding: 8px;
+}
+
+/* Gallery */
+.gallery-section {
+  display: flex;
+  justify-content: center;   /* center images */
+  gap: 20px;
+  flex-wrap: wrap;           /* wrap neatly on small screens */
+  margin: 20px auto;
+  max-width: 1000px;         /* keep gallery neat */
+}
+
+
+.gallery-section img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-section img:hover {
+  transform: scale(1.05);
+}
+.gallery h2 {
+  text-align: center;       /* center the titles */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #ffd369;           /* keep your gold/yellow color */
+  font-size: 2rem;
+}
+
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 30px;
+}
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0d1b2a; /* clean dark color */
+  z-index: -2; /* behind everything */
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;   /* white text */
+  background: transparent; /* so particles show */
+}
